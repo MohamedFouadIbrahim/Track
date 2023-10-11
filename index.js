@@ -28,7 +28,9 @@ app.post('/', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    res.send('hello')
+    res.status(200).json({
+        Sucess: "Sucess"
+    })
 })
 
 app.listen(PORT, () => {
